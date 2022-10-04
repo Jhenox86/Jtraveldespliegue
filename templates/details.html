@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>J-TRAVEL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="static/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="static/assets/css/templatemo-cyborg-gaming.css">
+    <link rel="stylesheet" href="static/assets/css/owl.css">
+    <link rel="stylesheet" href="static/assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 579 Cyborg Gaming
+
+https://templatemo.com/tm-579-cyborg-gaming
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="static/assets/images/logo.png" alt="">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Search End ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Buscar" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Search End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li><a href="{{url_for('homepage')}}" >Inicio</a></li>
+                      <li><a href="{{url_for('browse')}}">Sitios</a></li>
+                      <li><a href="{{url_for('details')}}"class="active">Hoteles</a></li>
+                      <li><a href="{{url_for('nosotros')}}">Nosotros</a></li>
+                      <li><a href="{{url_for('resena')}}">Reseñas</a></li>
+                      <li><a href="{{url_for('entrar')}}">Login</a></li>
+                      <!-- <li><a href="{{url_for('register')}}">Registrarse</a></li> -->
+                      <li><a href="{{url_for('entrar')}}">Iniciar sesión <img src="static/assets/images/profile-header.png" alt=""></a></li>
+                  </ul>  
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-content">
+
+          <!-- ***** Videos Start ***** -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="feature-banner header-text">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="thumb">
+                    <img src="static/assets/images/feature-left.jpg" alt="" style="border-radius: 23px;">
+                    <a href="https://www.youtube.com/watch?v=dg6Y1Ix3f0w" target="_blank"><i class="fa fa-play"></i></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="thumb">
+                      <img src="static/assets/images/feature-right.jpg" alt="" style="border-radius: 23px;">
+                      <a href="https://www.youtube.com/watch?v=Exly3dycplY" target="_blank"><i class="fa fa-play"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Videos End ***** -->
+
+          <!-- ***** Reserva Start ***** -->
+          <div class="game-details">
+            <div class="row">
+              <div class="col-lg-12">
+                <h2>Reserva aquí</h2>
+              </div>
+              <div class="col-lg-12">
+                <div class="content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="left-info">
+                        <div class="left">
+                          <h4></h4>
+                        </div>
+                        <ul>
+                          <a href="https://www.tripadvisor.com.mx/Hotels-g294073-Colombia-Hotels.html" class="search-icon">
+                            <img src="static/assets/images/logo-tripadvisor.png" alt="">
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="right-info">
+                        <ul>
+                          <a href="https://es.airbnb.com/colombia/stays" class="search-icon">
+                            <img src="static/assets/images/logo-airbnb.png" alt="">
+                          </a>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="right-info">
+                        <ul>
+                          <a href="https://www.hotelescolombia.co/" class="search-icon">
+                            <img src="static/assets/images/logo-hotelescolombia.png" alt="">
+                          </a>                          
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="right-info">
+                        <ul>
+                          <a href="https://www.kayak.com.pe/Hoteles-en-Colombia.53.dc.html" class="search-icon">
+                            <img src="static/assets/images/logo-kayak.png" alt="">
+                          </a>                         
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="right-info">
+                        <ul>
+                          <a href="https://www.expedia.com/es/Destinos-En-Colombia.d38.Destinos-con-hotel" class="search-icon">
+                            <img src="static/assets/images/logo-expedia.png" alt="">
+                          </a>                         
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- *****Reserva end***** -->
+
+          <!-- *****Restaurantes Start***** -->
+          <div class="live-stream">
+            <div class="col-lg-12">
+              <div class="heading-section">
+                <h4><em>Mejores Restaurantes</em> según Latin America’s 50</h4>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-01.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="http://restauranteleo.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/leorestaurantcol/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/LEO/@4.6480804,-74.0586396,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f999ba47a4c7f:0xbb64e21890b75f6c!8m2!3d4.6480804!4d-74.0564508"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-01.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>Leo</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-02.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://www.harrysasson.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/harry_sasson/?hl=es"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Harry+Sasson/@4.659312,-74.0567706,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a5d998dd291:0x9ee74e6243460a25!8m2!3d4.659312!4d-74.0545819?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-02.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>Harry Sasson</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-03.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://elchato.co/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/elchato_rest/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/El+Chato/@4.6478318,-74.0570942,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a44fa5cc941:0x1e38af7880720026!8m2!3d4.6478318!4d-74.0570942?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-03.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>El Chato</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-04.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://criterion-1.cluvi.co/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/criterionbogota/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Criteri%C3%B3n/@4.65169,-74.056011,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9b6ab2e08791:0x3715bc8fbfba11d1!8m2!3d4.6517066!4d-74.0560014?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-04.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>Criterión</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-05.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://www.andrescarnederes.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/andres_c_de_res/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Andr%C3%A9s+Carne+de+Res/@4.8543314,-74.0654281,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f878cb3b91915:0xab92c523ae39f37d!8m2!3d4.8543314!4d-74.0654281?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-05.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Chía</span>
+                    <h4>Andrés Carne de Res</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-06.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://elcielorestaurant.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/elcielorestaurant/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Restaurante+El+Cielo/@4.651506,-74.054572,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a421c3d3e59:0x2dae4b5e7628203b!8m2!3d4.6514437!4d-74.0546072?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-06.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>El Cielo</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-07.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://www.carmenmedellin.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/carmenrestaurante/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Carmen/@6.209964,-75.565669,17z/data=!3m1!4b1!4m5!3m4!1s0x8e44282901500937:0xfd54a9b1a9914d2c!8m2!3d6.2099699!4d-75.5656867?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-07.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Medellín</span>
+                    <h4>Carmen</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <img src="static/assets/images/stream-08.jpg" alt="">
+                    <div class="hover-effect">
+                      <div class="content">
+                        <div class="live">
+                          <a href="https://salvopatria.com/">Sitio web</a>
+                        </div>
+                        <ul>
+                          <li><a href="https://www.instagram.com/salvopatria/"><i class=""></i>Instagram</a></li>
+                          <li><a href="https://www.google.com/maps/place/Salvo+Patria/@4.6403894,-74.0607639,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f9a3bea5a24d5:0xfa0c75ff9b851f06!8m2!3d4.6403813!4d-74.0607632?hl=es"><i class=""></i>Ubicación</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <div class="avatar">
+                      <img src="static/assets/images/avatar-08.jpg" alt="" style="max-width: 46px; border-radius: 50%; float: left;">
+                    </div>
+                    <span><i class="fa fa-check"></i> Bogotá</span>
+                    <h4>Salvo Patria</h4>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="main-button">
+                  <a href="https://revistadiners.com.co/estilo-de-vida/gastronomia/59493_mejores-restaurantes-de-colombia-segun-los-latin-americas-50-best-restaurants-2021/">Leer artículo completo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ***** Restaurantes End ***** -->
+
+          <!-- ***** Platos de cada región Start ***** -->
+          <div class="other-games">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="heading-section">
+                  <h4><em>Platos típicos</em> de cada región</h4>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/caribe.jpg" alt="" class="templatemo-item">
+                  <h4>Región Caribe</h4><span>Mote de queso</span>
+                  <ul>
+                    <li>-Arroz con coco</li>
+                    <li>-Friche</li>
+                    <li>-Mote de queso</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/chuleta.jpg" alt="" class="templatemo-item">
+                  <h4>Región Pacífico</h4><span>Chuleta valluna</span>
+                  <ul>
+                    <li>-Chuleta Valluna</li>
+                    <li>-Cuy asado</li>
+                    <li>-Sancocho de gallina</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/chiguiro.jpg" alt="" class="templatemo-item">
+                  <h4>Región Orinoquía</h4><span>Chigüiro</span>
+                  <ul>
+                    <li>-Chigüiro</li>
+                    <li>-Mamona</li>
+                    <li>-Arroz llanero</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/mojojoy.jpg" alt="" class="templatemo-item">
+                  <h4>Región Amazonía</h4><span>Mojojoy</span>
+                  <ul>
+                    <li>-Mojojoy</li>
+                    <li>-Pirarucú</li>
+                    <li>-Morrocoy (tortuga)</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/bandeja.jpg" alt="" class="templatemo-item">
+                  <h4>Región Andina</h4><span>Bandeja paisa</span>
+                  <ul>
+                    <li>-Ajiaco</li>
+                    <li>-Bandeja paisa</li>
+                    <li>-Lechona</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item">
+                  <img src="static/assets/images/sopa.jpg" alt="" class="templatemo-item">
+                  <h4>Región Insular</h4><span>Sopa de cangrejo</span>
+                  <ul>
+                    <li>-Rondón o Run down</li>
+                    <li>-Sopa de Cangrejo</li>
+                    <li>-Cocadas</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ***** Platos de regiones End ***** -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright © 2036 <a href="#">J-TRAVEL</a> Company. All rights reserved. 
+          
+          <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/vendor/jquery/jquery.min.js"></script>
+  <script src="static/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="static/assets/js/isotope.min.js"></script>
+  <script src="static/assets/js/owl-carousel.js"></script>
+  <script src="static/assets/js/tabs.js"></script>
+  <script src="static/assets/js/popup.js"></script>
+  <script src="static/assets/js/custom.js"></script>
+
+
+  </body>
+
+</html>
